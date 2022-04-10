@@ -1,0 +1,209 @@
+[
+  {
+    "_id": "559450d8-44f4-4cbe-b724-44cf0f87106b",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Get all tasks",
+    "url": "http://localhost:3000/tasks",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-01-24T04:20:27.391Z",
+    "modified": "2022-04-10T06:53:17.902Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "status",
+        "value": "IN_PROGRESS",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "search",
+        "value": "CLEAN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "search",
+          "value": "",
+          "isDisabled": true
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlVzZXIyIiwiaWF0IjoxNjQ5NTczNDU0LCJleHAiOjE2NDk1NzcwNTR9.jRx1qEa2x3fkkCd05XZ9u5svRGindPu5M0QOjb8ILNk"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7b22b4c1-a3b7-44cb-83f4-1d484278b863",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Create a task",
+    "url": "http://localhost:3000/tasks",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-01-24T04:27:41.640Z",
+    "modified": "2022-04-08T03:53:05.797Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "title",
+          "value": "task"
+        },
+        {
+          "name": "description",
+          "value": "Lots of cleaning has to be done"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlVzZXIyIiwiaWF0IjoxNjQ5Mzg5NTcwLCJleHAiOjE2NDkzOTMxNzB9.ptqbPrErB_4UmFAUNcUssBEayb3ShMqzzFdaMI8CWBM"
+    },
+    "tests": []
+  },
+  {
+    "_id": "8ceb6a75-62b3-4609-b6ef-14c63b2bb8c3",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Get task by ID",
+    "url": "http://localhost:3000/tasks/cc9ae67f-843c-40a3-ac7c-5ad2d8d90b45",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2022-03-03T03:46:52.846Z",
+    "modified": "2022-03-14T05:46:26.201Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "67fc24b0-4ab0-4fb7-830a-6e4778ee4842",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Delete task",
+    "url": "http://localhost:3000/tasks/034d8ed8-12c4-448e-8053-4d5ec5d95d1f",
+    "method": "DELETE",
+    "sortNum": 80000,
+    "created": "2022-03-03T04:31:15.136Z",
+    "modified": "2022-03-14T06:03:08.732Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "344d71d2-cd82-4752-89ce-28998489b7a3",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Update task status",
+    "url": "http://localhost:3000/tasks/4a7f73a1-f406-4735-bf7d-d230eba36832/status",
+    "method": "PATCH",
+    "sortNum": 90000,
+    "created": "2022-03-03T05:00:23.886Z",
+    "modified": "2022-03-29T03:39:20.139Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "b8593098-2451-42c9-9eff-3b5884c82819",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "",
+    "name": "Get tasks with filters",
+    "url": "http://localhost:3000/tasks?status=OPEN&search=Room",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-03-07T01:54:02.598Z",
+    "modified": "2022-03-07T01:54:08.434Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isPath": false
+      },
+      {
+        "name": "search",
+        "value": "Room",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "60e7b247-0593-464b-92d4-a36c6d0a3377",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "9d19eaff-842d-4ac0-b434-d67da8cf0e6a",
+    "name": "Sign up",
+    "url": "http://localhost:3000/auth/signup",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-04-02T04:33:01.141Z",
+    "modified": "2022-04-10T06:51:33.611Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "username",
+          "value": "User2"
+        },
+        {
+          "name": "password",
+          "value": "Password123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "1d6583f7-8ce8-47c1-9633-9c182c8c5ecb",
+    "colId": "31d5f981-63a1-4739-963d-40063b1b412e",
+    "containerId": "9d19eaff-842d-4ac0-b434-d67da8cf0e6a",
+    "name": "Sign in",
+    "url": "http://localhost:3000/auth/signin",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-04-03T03:11:13.233Z",
+    "modified": "2022-04-10T06:51:36.277Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "username",
+          "value": "User2"
+        },
+        {
+          "name": "password",
+          "value": "Password123"
+        }
+      ]
+    },
+    "tests": []
+  }
+]
